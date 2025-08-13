@@ -149,7 +149,6 @@ export class CarerixWebhooksClient {
 
   private async authHeaders(): Promise<Record<string, string>> {
     const token = await this.getAccessToken();
-    console.log(token);
     return { Authorization: `Bearer ${token}` };
   }
 

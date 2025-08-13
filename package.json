@@ -6,15 +6,26 @@
   "files": [
     "dist"
   ],
+  "bin": {
+    "cx-webhooks": "dist/cli.js"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "npm run build && node dist/demo.js",
+    "cli": "npm run build && node dist/cli.js",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "carerix",
+    "webhooks",
+    "cli"
+  ],
+  "author": {
+    "name": "Niels Maerten",
+    "url": "https://github.com/nielsmaerten"
+  },
   "license": "ISC",
   "description": "",
   "devDependencies": {
